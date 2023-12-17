@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="642.0" prefWidth="744.0" style="-fx-background-color: #f2fafc;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendar.CalendarController">
+    <FlowPane fx:id="calendar" hgap="10.0" layoutX="14.0" layoutY="116.0" prefHeight="498.0" prefWidth="716.0" vgap="5.0" />
+    <HBox alignment="CENTER" layoutX="163.0" layoutY="14.0" prefHeight="44.0" prefWidth="396.0" spacing="5.0">
+        <children>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#backOneMonth" prefHeight="26.0" prefWidth="26.0" text="&lt;" textAlignment="CENTER" />
+            <Text fx:id="year" strokeType="OUTSIDE" strokeWidth="0.0" text="####">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            </Text>
+            <Text fx:id="month" strokeType="OUTSIDE" strokeWidth="0.0" text="####">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            </Text>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#forwardOneMonth" text="&gt;" textAlignment="CENTER" />
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" layoutX="14.0" layoutY="78.0" prefHeight="44.0" prefWidth="716.0" spacing="88.75">
+        <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Пн" textAlignment="CENTER" />
+            <Text layoutX="213.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вт" textAlignment="CENTER" />
+            <Text layoutX="222.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ср" textAlignment="CENTER" />
+            <Text layoutX="232.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Чт" textAlignment="CENTER" />
+            <Text layoutX="241.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пт" textAlignment="CENTER" />
+            <Text layoutX="251.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сб" textAlignment="CENTER" />
+            <Text layoutX="266.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вс" textAlignment="CENTER" />
+        </children>
+        <padding>
+            <Insets right="9.0" />
+        </padding>
+    </HBox>
+
+</AnchorPane>
